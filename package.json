@@ -3,14 +3,15 @@
     "displayName": "ipl",
     "description": "ImpactPolicyLanguage highlight support for VS Code",
     "version": "0.0.1",
+    "publisher": "lichtwellenreiter",
     "license": "SEE LICENSE IN LICENSE.md",
     "icon": "media/ipl-logo.png",
     "bugs": {
-        "url": "https://github.com/lichtwellenreiter/ipl-vscode-extension/issues"
+        "url": "https://github.com/lichtwellenreiter/ipl-code/issues"
     },
     "repository": {
         "type": "git",
-        "url": "https://github.com/lichtwellenreiter/ipl-vscode-extension.git"
+        "url": "https://github.com/lichtwellenreiter/ipl-code.git"
     },
     "engines": {
         "vscode": "^1.39.0"
@@ -24,25 +25,21 @@
         "impact"
     ],
     "contributes": {
-        "languages": [
-            {
-                "id": "ipl",
-                "aliases": [
-                    "ImpactPolicyLanguage",
-                    "ipl"
-                ],
-                "extensions": [
-                    ".ipl"
-                ],
-                "configuration": "./language-configuration.json"
-            }
-        ],
-        "grammars": [
-            {
-                "language": "ipl",
-                "scopeName": "source.ipl",
-                "path": "./syntaxes/ipl.json"
-            }
-        ]
+        "languages": [{
+            "id": "ipl",
+            "aliases": [
+                "ImpactPolicyLanguage",
+                "ipl"
+            ],
+            "extensions": [
+                ".ipl"
+            ],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "ipl",
+            "scopeName": "source.ipl",
+            "path": "./syntaxes/ipl.json"
+        }]
     }
 }
